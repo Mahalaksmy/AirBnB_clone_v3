@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Contains the FileStorage class
 """
@@ -68,7 +67,6 @@ class FileStorage:
 
     def close(self):
         """call reload() method for deserializing the JSON file to objects"""
-
         self.reload()
 
     def get(self, cls, id):
@@ -93,4 +91,3 @@ class FileStorage:
             if cls == value.__class__ or cls == value.__class__.__name__:
                 count += 1
         return count
-
